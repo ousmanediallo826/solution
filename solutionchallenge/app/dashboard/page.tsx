@@ -4,7 +4,9 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../lib/firebase'; // Adjust to your actual firebase configuration path
-
+//solutionchallenge\app\dashboard\display\page.tsx
+import Home from '../dashboard/display/page'
+import Header from '../dashboard/components/header/base-header'; 
 const Page = () => {
   const router = useRouter();
   const [user, setUser] = useState<any>(null); // State to store user information
@@ -34,8 +36,9 @@ const Page = () => {
     <div>
       {user && (
         <>
+          <Header/>
           <h1>Welcome, {user.email}</h1>
-          {/* Display dashboard content */}
+          <Home/>
         </>
       )}
     </div>
