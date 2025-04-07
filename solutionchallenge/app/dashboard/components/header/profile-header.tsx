@@ -7,7 +7,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
-import icon from "";//./icon.jpg
+import icon from "./icon.jpg"; // Ensure the file exists and matches this extension
 import Image from "next/image";
 import { ChevronDown } from "lucide-react"; // Import an arrow icon
 import { useState } from "react"; // Import useState
