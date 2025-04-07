@@ -7,7 +7,7 @@ import { auth } from '../lib/firebase'; // Adjust to your actual firebase config
 //solutionchallenge\app\dashboard\display\page.tsx
 import Home from '../dashboard/display/page'
 import Header from '../dashboard/components/header/base-header'; 
-const Page = () => {
+const PageDashboard = () => {
   const router = useRouter();
   const [user, setUser] = useState<any>(null); // State to store user information
   const [loading, setLoading] = useState(true); // Loading state to handle auth state check
@@ -45,4 +45,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default PageDashboard;
